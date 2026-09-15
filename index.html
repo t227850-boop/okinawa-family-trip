@@ -1,130 +1,896 @@
-🌺 沖繩 4天3夜 親子自駕
-2026/09/16（三）～09/19（六）｜2大＋1歲10個月龍鳳胎
-👶 午睡優先 12:30–15:00　🚗 自駕　🍚 不安排甜食／甜飲
-🗓 行程🍚 餐廳💰 記帳🚗 資訊
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>沖繩4天3夜｜親子自駕＋記帳</title>
 
-🌺 Day 1｜9/16（三）台北→恩納
-09:35
-✈️ 台北桃園→沖繩
-約12:20
-🛬 抵達那霸
-12:20–13:30
-入境・領行李・租車
-13:30–15:00
-🟣 午睡車上午睡→恩納方向
-15:00–16:00
-🟢 原定第一牧志公設市場
-16:15–16:45
-🟢 原定達磨寺／西來院
-16:45–17:45
-🚗 前往恩納 Airbnb
-18:00–18:40
-🟠 備選ナビービーチ散步／看海
-19:00
-🍚 Airbnb 自煮／簡單外食
-🐠 Day 2｜9/17（四）恩納→古宇利→名護
-08:00
-🏠 住宿出發
-09:00–11:15
-🟢 原定美麗海水族館
-11:45–12:20
-🟢 原定KOURI SHRIMP 蝦蝦飯
-12:30–15:00
-🟣 午睡車上午睡
-15:00–16:00
-🟠 備選Orion Happy Park（看孩子狀況）
-16:15–17:15
-🟠 備選Birthday Nago 親子用品
-17:30
-🚗 返回恩納住宿
-🦒 Day 3｜9/18（五）恩納→北谷
-08:00–08:30
-早餐・整理行李
-08:30
-🚗 退房→沖繩兒童王國
-09:30–11:30
-🟢 原定沖繩兒童王國
-11:30–12:15
-🍚 往北谷・簡單午餐
-12:30–15:00
-🟣 午睡車上午睡
-15:00–15:50
-🟠 備選謝苅公園（看狀況）
-16:00–16:30
-🏨 La'gent Hotel Chatan 入住
-17:00–19:15
-🌆 美國村・晚餐
-19:30–20:00
-🎆 Eisa・北谷煙火
-✈️ Day 4｜9/19（六）北谷→那霸→台北
-07:00
-早餐・退房
-08:30–09:30
-🌊 北谷附近散步／海邊
-10:00–11:00
-🟢 原定漁師食堂 大ばんぶる舞
-11:15–12:00
-🟠 備選The 肉屋（時間充裕才去）
-12:00–13:00
-🚗 回程／休息
-13:00–13:40
-前往租車處
-14:00
-🚗 還車（已確認）
-16:45
-✈️ 那霸→台北
+<style>
+:root{
+--g:#36a269;
+--o:#f28b28;
+--b:#3187d8;
+--p:#ef5b7a;
+--bg:#f4fbff;
+--ink:#263238
+}
+*{box-sizing:border-box}
+body{
+margin:0;
+font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif;
+background:var(--bg);
+color:var(--ink)
+}
+header{
+background:linear-gradient(135deg,#50c7e6,#7bd99f);
+color:#fff;
+padding:25px 16px;
+text-align:center
+}
+h1{
+margin:0 0 7px;
+font-size:clamp(28px,6vw,46px)
+}
+header p{margin:4px}
+.wrap{
+max-width:1200px;
+margin:auto;
+padding:16px
+}
+.tabs{
+display:flex;
+gap:8px;
+overflow:auto;
+position:sticky;
+top:0;
+z-index:5;
+background:#f4fbfff0;
+padding:8px 0
+}
+.tabs button,.btn{
+border:0;
+border-radius:10px;
+padding:10px 14px;
+cursor:pointer;
+font-weight:700
+}
+.tabs button{
+background:#fff;
+box-shadow:0 2px 8px #0001;
+white-space:nowrap
+}
+.tabs .on{
+background:#263238;
+color:#fff
+}
+.panel{display:none}
+.panel.on{display:block}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(285px,1fr));
+gap:14px
+}
+.day,.box{
+background:#fff;
+border-radius:18px;
+padding:15px;
+box-shadow:0 4px 15px #0000000d
+}
+.day{
+border-top:6px solid var(--g)
+}
+.d2{border-color:#55aa70}
+.d3{border-color:var(--o)}
+.d4{border-color:var(--b)}
+.day h2,.box h2{
+margin:0 0 10px
+}
+.item{
+display:grid;
+grid-template-columns:84px 1fr;
+gap:7px;
+padding:8px 0;
+border-bottom:1px solid #edf0f2
+}
+.time{
+font-weight:800;
+color:#52606a
+}
+.tag{
+display:inline-block;
+border-radius:99px;
+padding:3px 8px;
+font-size:12px;
+font-weight:800;
+margin:1px
+}
+.confirm{
+background:#dff4e7;
+color:#207542
+}
+.backup{
+background:#fff0dc;
+color:#a85b00
+}
+.rain{
+background:#e3f0ff;
+color:#1d65a5
+}
+.nap{
+background:#eee2ff;
+color:#7141a4
+}
+.restaurant{
+padding:9px 0;
+border-bottom:1px dashed #ddd
+}
+.form{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:10px
+}
+input,select{
+width:100%;
+padding:10px;
+border:1px solid #d5dfe5;
+border-radius:10px;
+background:#fff
+}
+.wide{grid-column:span 2}
+.btn{
+background:#263238;
+color:#fff
+}
+.green{background:var(--g)}
+.danger{background:#d94a4a}
+.stats{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:10px
+}
+.stat{
+background:#f6fafb;
+border-radius:12px;
+padding:12px
+}
+.total{
+font-size:26px;
+font-weight:900
+}
+.expense{
+display:grid;
+grid-template-columns:1fr auto;
+gap:8px;
+padding:10px 0;
+border-bottom:1px solid #eee
+}
+.muted{color:#69767f}
+footer{
+text-align:center;
+color:#69767f;
+padding:28px
+}
+@media(max-width:520px){
+.wide{grid-column:span 1}
+.item{grid-template-columns:72px 1fr}
+.stats{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body><header>
+<h1>🌺 沖繩 4天3夜 親子自駕</h1>
+<p>2026/09/16（三）～09/19（六）｜2大＋1歲10個月龍鳳胎</p>
+<p>👶 午睡優先 12:30–15:00　🚗 自駕　🍚 不安排甜食／甜飲</p>
+</header>
+
+<div class="wrap">
+
+<nav class="tabs">
+<button class="on" onclick="tab('it',this)">🗓 行程</button>
+<button onclick="tab('food',this)">🍚 餐廳</button>
+<button onclick="tab('money',this)">💰 記帳</button>
+<button onclick="tab('info',this)">🚗 資訊</button>
+</nav>
+
+<section id="it" class="panel on">
+
+<div class="grid">
+
+<article class="day">
+<h2>🌺 Day 1｜9/16（三）台北→恩納</h2>
+
+<div class="item">
+<b class="time">09:35</b>
+<div>✈️ 台北桃園→沖繩</div>
+</div>
+
+<div class="item">
+<b class="time">約12:20</b>
+<div>🛬 抵達那霸</div>
+</div>
+
+<div class="item">
+<b class="time">12:20–13:30</b>
+<div>入境・領行李・租車</div>
+</div>
+
+<div class="item">
+<b class="time">13:30–15:00</b>
+<div>
+<span class="tag nap">🟣 午睡</span>
+車上午睡→恩納方向
+</div>
+</div>
+
+<div class="item">
+<b class="time">15:00–16:00</b>
+<div>
+<span class="tag confirm">🟢 原定</span>
+第一牧志公設市場
+</div>
+</div>
+
+<div class="item">
+<b class="time">16:15–16:45</b>
+<div>
+<span class="tag confirm">🟢 原定</span>
+達磨寺／西來院
+</div>
+</div>
+
+<div class="item">
+<b class="time">16:45–17:45</b>
+<div>🚗 前往恩納 Airbnb</div>
+</div>
+
+<div class="item">
+<b class="time">18:00–18:40</b>
+<div>
+<span class="tag backup">🟠 備選</span>
+ナビービーチ散步／看海
+</div>
+</div>
+
+<div class="item">
+<b class="time">19:00</b>
+<div>🍚 Airbnb 自煮／簡單外食</div>
+</div>
+</article>
 
 
-🌺 9/16
-🟢 原定第一牧志公設市場
-🟠 備用CHOPPiN（恩納）
-🔵 雨天pizzeria da ENZO（恩納）
+<article class="day d2">
+<h2>🐠 Day 2｜9/17（四）恩納→古宇利→名護</h2>
 
-🐠 9/17
-🟢 原定KOURI SHRIMP 蝦蝦飯
-🟠 備用pizzeria da ENZO／CHOPPiN
-🔵 雨天CHOPPiN／住宿附近外食
+<div class="item">
+<b class="time">08:00</b>
+<div>🏠 住宿出發</div>
+</div>
 
-🎆 9/18
-🟢 原定THE CALIF KITCHEN OKINAWA
-🟠 備用ALLY's／ばくばく亭
-🔵 雨天北谷 Mall 室內餐廳
+<div class="item">
+<b class="time">09:00–11:15</b>
+<div>
+<span class="tag confirm">🟢 原定</span>
+美麗海水族館
+</div>
+</div>
 
-✈️ 9/19
-🟢 原定漁師食堂 大ばんぶる舞
-🟠 備用The 肉屋（時間充裕才去）
-🔵 雨天那霸市區／商場親子餐廳
+<div class="item">
+<b class="time">11:45–12:20</b>
+<div>
+<span class="tag confirm">🟢 原定</span>
+KOURI SHRIMP 蝦蝦飯
+</div>
+</div>
 
-💰 沖繩旅行記帳
-支出資料只保存在這台裝置的瀏覽器。可輸入 JPY 或 TWD，依每筆匯率換算。
+<div class="item">
+<b class="time">12:30–15:00</b>
+<div>
+<span class="tag nap">🟣 午睡</span>
+車上午睡
+</div>
+</div>
 
+<div class="item">
+<b class="time">15:00–16:00</b>
+<div>
+<span class="tag backup">🟠 備選</span>
+Orion Happy Park（看孩子狀況）
+</div>
+</div>
+
+<div class="item">
+<b class="time">16:15–17:15</b>
+<div>
+<span class="tag backup">🟠 備選</span>
+Birthday Nago 親子用品
+</div>
+</div>
+
+<div class="item">
+<b class="time">17:30</b>
+<div>🚗 返回恩納住宿</div>
+</div>
+</article>
+
+
+<article class="day d3">
+<h2>🦒 Day 3｜9/18（五）恩納→北谷</h2>
+
+<div class="item">
+<b class="time">08:00–08:30</b>
+<div>早餐・整理行李</div>
+</div>
+
+<div class="item">
+<b class="time">08:30</b>
+<div>🚗 退房→沖繩兒童王國</div>
+</div>
+
+<div class="item">
+<b class="time">09:30–11:30</b>
+<div>
+<span class="tag confirm">🟢 原定</span>
+沖繩兒童王國
+</div>
+</div>
+
+<div class="item">
+<b class="time">11:30–12:15</b>
+<div>🍚 往北谷・簡單午餐</div>
+</div>
+
+<div class="item">
+<b class="time">12:30–15:00</b>
+<div>
+<span class="tag nap">🟣 午睡</span>
+車上午睡
+</div>
+</div>
+
+<div class="item">
+<b class="time">15:00–15:50</b>
+<div>
+<span class="tag backup">🟠 備選</span>
+謝苅公園（看狀況）
+</div>
+</div>
+
+<div class="item">
+<b class="time">16:00–16:30</b>
+<div>🏨 La'gent Hotel Chatan 入住</div>
+</div>
+
+<div class="item">
+<b class="time">17:00–19:15</b>
+<div>🌆 美國村・晚餐</div>
+</div>
+
+<div class="item">
+<b class="time">19:30–20:00</b>
+<div>🎆 Eisa・北谷煙火</div>
+</div>
+</article>
+
+
+<article class="day d4">
+<h2>✈️ Day 4｜9/19（六）北谷→那霸→台北</h2>
+
+<div class="item">
+<b class="time">07:00</b>
+<div>早餐・退房</div>
+</div>
+
+<div class="item">
+<b class="time">08:30–09:30</b>
+<div>🌊 北谷附近散步／海邊</div>
+</div>
+
+<div class="item">
+<b class="time">10:00–11:00</b>
+<div>
+<span class="tag confirm">🟢 原定</span>
+漁師食堂 大ばんぶる舞
+</div>
+</div>
+
+<div class="item">
+<b class="time">11:15–12:00</b>
+<div>
+<span class="tag backup">🟠 備選</span>
+The 肉屋（時間充裕才去）
+</div>
+</div>
+
+<div class="item">
+<b class="time">12:00–13:00</b>
+<div>🚗 回程／休息</div>
+</div>
+
+<div class="item">
+<b class="time">13:00–13:40</b>
+<div>前往租車處</div>
+</div>
+
+<div class="item">
+<b class="time">14:00</b>
+<div>🚗 還車（已確認）</div>
+</div>
+
+<div class="item">
+<b class="time">16:45</b>
+<div>✈️ 那霸→台北</div>
+</div>
+</article>
+
+</div>
+</section><section id="food" class="panel">
+
+<div class="grid">
+
+<div class="box">
+<h2>🌺 9/16</h2>
+
+<div class="restaurant">
+<span class="tag confirm">🟢 原定</span>
+第一牧志公設市場
+</div>
+
+<div class="restaurant">
+<span class="tag backup">🟠 備用</span>
+CHOPPiN（恩納）
+</div>
+
+<div class="restaurant">
+<span class="tag rain">🔵 雨天</span>
+pizzeria da ENZO（恩納）
+</div>
+</div>
+
+
+<div class="box">
+<h2>🐠 9/17</h2>
+
+<div class="restaurant">
+<span class="tag confirm">🟢 原定</span>
+KOURI SHRIMP 蝦蝦飯
+</div>
+
+<div class="restaurant">
+<span class="tag backup">🟠 備用</span>
+pizzeria da ENZO／CHOPPiN
+</div>
+
+<div class="restaurant">
+<span class="tag rain">🔵 雨天</span>
+CHOPPiN／住宿附近外食
+</div>
+</div>
+
+
+<div class="box">
+<h2>🎆 9/18</h2>
+
+<div class="restaurant">
+<span class="tag confirm">🟢 原定</span>
+THE CALIF KITCHEN OKINAWA
+</div>
+
+<div class="restaurant">
+<span class="tag backup">🟠 備用</span>
+ALLY's／ばくばく亭
+</div>
+
+<div class="restaurant">
+<span class="tag rain">🔵 雨天</span>
+北谷 Mall 室內餐廳
+</div>
+</div>
+
+
+<div class="box">
+<h2>✈️ 9/19</h2>
+
+<div class="restaurant">
+<span class="tag confirm">🟢 原定</span>
+漁師食堂 大ばんぶる舞
+</div>
+
+<div class="restaurant">
+<span class="tag backup">🟠 備用</span>
+The 肉屋（時間充裕才去）
+</div>
+
+<div class="restaurant">
+<span class="tag rain">🔵 雨天</span>
+那霸市區／商場親子餐廳
+</div>
+</div>
+
+</div>
+</section>
+
+
+<section id="money" class="panel">
+
+<div class="box">
+
+<h2>💰 沖繩旅行記帳</h2>
+
+<p class="muted">
+支出資料只保存在這台裝置的瀏覽器。
+可輸入 JPY 或 TWD，依每筆匯率換算。
+</p>
+
+<div class="stats">
+
+<div class="stat">
 日圓合計
-¥0
+<div id="jpy" class="total">¥0</div>
+</div>
+
+<div class="stat">
 台幣估算
-NT$0
+<div id="twd" class="total">NT$0</div>
+</div>
+
+<div class="stat">
 筆數
-0
+<div id="cnt" class="total">0</div>
+</div>
 
-➕ 新增支出
-日期分類餐飲交通／油資門票住宿購物租車其他幣別JPYTWD金額項目／備註匯率 1 JPY = NT$
-新增記帳
+</div>
+</div>
 
-📋 支出明細
+
+<div class="box">
+
+<h2>➕ 新增支出</h2>
+
+<div class="form">
+
+<label>
+日期
+<input id="dt" type="date" value="2026-09-16">
+</label>
+
+<label>
+分類
+<select id="cat">
+<option>餐飲</option>
+<option>交通／油資</option>
+<option>門票</option>
+<option>住宿</option>
+<option>購物</option>
+<option>租車</option>
+<option>其他</option>
+</select>
+</label>
+
+<label>
+幣別
+<select id="cur">
+<option>JPY</option>
+<option>TWD</option>
+</select>
+</label>
+
+<label>
+金額
+<input id="amt" type="number" min="0" placeholder="例如 3800">
+</label>
+
+<label class="wide">
+項目／備註
+<input id="note" placeholder="例如 KOURI SHRIMP 午餐">
+</label>
+
+<label>
+匯率 1 JPY = NT$
+<input id="rate" type="number" step="0.0001" value="0.21">
+</label>
+
+<div style="align-self:end">
+<button class="btn green" onclick="add()">新增記帳</button>
+</div>
+
+</div>
+</div>
+
+
+<div class="box">
+
+<h2>📋 支出明細</h2>
+
+<div id="list" class="muted">
 目前沒有記帳資料。
+</div>
 
+<br>
+
+<button class="btn danger" onclick="clearAll()">
 清空全部記帳
+</button>
+
+</div>
+
+</section>
 
 
-🚗 租車
-9/16 取車：抵達、入境後辦理。9/19 14:00 還車已確認。車型 Eclipse Cross 或 Corolla Cross；租車總費用 ¥37,000。
+<section id="info" class="panel">
 
-🏨 住宿
+<div class="grid">
+
+<div class="box">
+<h2>🚗 租車</h2>
+
+<p>
+9/16 取車：抵達、入境後辦理。
+</p>
+
+<p>
+9/19 <b>14:00 還車已確認</b>。
+</p>
+
+<p>
+車型 Eclipse Cross 或 Corolla Cross；
+租車總費用 ¥37,000。
+</p>
+</div>
+
+
+<div class="box">
+<h2>🏨 住宿</h2>
+
+<p>
 9/16–9/18 恩納 Airbnb
+</p>
+
+<p>
 9/18 北谷 La'gent Hotel Okinawa Chatan
+</p>
+</div>
 
-👶 雙寶
-午睡 12:30–15:00；主要在車上或床上才能入睡。飲食不安排冰淇淋、蛋糕、糖果、餅乾、甜點及甜飲。
 
-🌧️ 雨天
-優先保留室內景點；公園、海邊依雨勢取消。餐廳改選室內親子友善方案。
+<div class="box">
+<h2>👶 雙寶</h2>
+
+<p>
+午睡 12:30–15:00；
+主要在車上或床上才能入睡。
+</p>
+
+<p>
+飲食不安排冰淇淋、蛋糕、糖果、
+餅乾、甜點及甜飲。
+</p>
+</div>
+
+
+<div class="box">
+<h2>🌧️ 雨天</h2>
+
+<p>
+優先保留室內景點；
+公園、海邊依雨勢取消。
+</p>
+
+<p>
+餐廳改選室內親子友善方案。
+</p>
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
 Okinawa Family Trip 🌺｜依孩子當天狀況彈性調整
+</footer>
+
+
+<script>
+
+const K='okinawaExpensesV1';
+
+function tab(id,b){
+
+document.querySelectorAll('.panel')
+.forEach(x=>x.classList.remove('on'));
+
+document.getElementById(id)
+.classList.add('on');
+
+document.querySelectorAll('.tabs button')
+.forEach(x=>x.classList.remove('on'));
+
+b.classList.add('on');
+
+}
+
+
+function data(){
+
+return JSON.parse(
+localStorage.getItem(K)||'[]'
+);
+
+}
+
+
+function save(x){
+
+localStorage.setItem(
+K,
+JSON.stringify(x)
+);
+
+}
+
+
+function add(){
+
+let a=+document.getElementById('amt').value;
+
+if(!a){
+
+alert('請輸入金額');
+
+return;
+
+}
+
+let x={
+
+id:Date.now(),
+
+date:document.getElementById('dt').value,
+
+cat:document.getElementById('cat').value,
+
+cur:document.getElementById('cur').value,
+
+amt:a,
+
+note:document.getElementById('note').value,
+
+rate:+document.getElementById('rate').value||.21
+
+};
+
+let d=data();
+
+d.push(x);
+
+save(d);
+
+document.getElementById('amt').value='';
+
+document.getElementById('note').value='';
+
+render();
+
+}
+
+
+function del(id){
+
+save(
+data().filter(x=>x.id!==id)
+);
+
+render();
+
+}
+
+
+function clearAll(){
+
+if(confirm('確定清空全部記帳？')){
+
+localStorage.removeItem(K);
+
+render();
+
+}
+
+}
+
+
+function render(){
+
+let d=data();
+
+let j=0;
+
+let t=0;
+
+d.forEach(x=>{
+
+if(x.cur==='JPY'){
+
+j+=x.amt;
+
+t+=x.amt*x.rate;
+
+}else{
+
+t+=x.amt;
+
+j+=x.amt/(x.rate||.21);
+
+}
+
+});
+
+
+document.getElementById('jpy')
+.textContent='¥'+Math.round(j).toLocaleString();
+
+document.getElementById('twd')
+.textContent='NT$'+Math.round(t).toLocaleString();
+
+document.getElementById('cnt')
+.textContent=d.length;
+
+
+document.getElementById('list').innerHTML=
+
+d.length
+
+?
+
+d.sort((a,b)=>
+a.date.localeCompare(b.date)
+)
+.map(x=>`
+
+<div class="expense">
+
+<div>
+
+<b>${x.note||'未命名支出'}</b>
+
+<br>
+
+<small>
+
+${x.date}｜
+${x.cat}｜
+${x.cur} ${x.amt.toLocaleString()}
+≈ NT$${Math.round(
+x.cur==='TWD'
+?x.amt
+:x.amt*x.rate
+).toLocaleString()}
+
+</small>
+
+</div>
+
+<button
+class="btn danger"
+onclick="del(${x.id})">
+
+刪除
+
+</button>
+
+</div>
+
+`).join('')
+
+:
+
+'目前沒有記帳資料。';
+
+}
+
+
+render();
+
+</script>
+
+</body>
+</html>
